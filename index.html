@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="ie=edge" http-equiv="x-ua-compatible" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>HH testovoe</title>
+    <link href="normalize.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <section class="cats">
+        <h1 class="cats__title">Ты сегодня покормил кота?</h1>
+        <ul class="cats__list">
+          <li class="cats__item item">
+            <div
+              class="item__card card"
+              onclick="selectCard(0)"
+              onmouseout="hoverCard(0)"
+              onmouseover="hoverCard(0)"
+            >
+              <p class="card__subtitle">Сказочное заморское яство</p>
+              <h2 class="card__title">Нямушка</h2>
+              <p class="card__flavor">с фуа-гра</p>
+              <p class="card__description">
+                <span class="card__number">10</span> порций<br />
+                мышь в подарок
+              </p>
+              <div class="card__size size">
+                <p class="size__number">0,5</p>
+                <p class="size__text">кг</p>
+              </div>
+            </div>
+            <p class="item__text">
+              Чего сидишь? Порадуй котэ,
+              <span class="item__link" onclick="selectCard(0)">купи.</span>
+            </p>
+          </li>
+          <li class="cats__item item">
+            <div
+              class="item__card card"
+              onclick="selectCard(1)"
+              onmouseout="hoverCard(1)"
+              onmouseover="hoverCard(1)"
+            >
+              <p class="card__subtitle">Сказочное заморское яство</p>
+              <h2 class="card__title">Нямушка</h2>
+              <p class="card__flavor">с рыбой</p>
+              <p class="card__description">
+                <span class="card__number">40</span>
+                порций<br />
+                <span class="card__number">2</span> мыши в подарок
+              </p>
+              <div class="card__size size">
+                <p class="size__number">2</p>
+                <p class="size__text">кг</p>
+              </div>
+            </div>
+            <p class="item__text">
+              Чего сидишь? Порадуй котэ,
+              <span class="item__link" onclick="selectCard(1)">купи.</span>
+            </p>
+          </li>
+          <li class="cats__item item">
+            <div
+              class="item__card card disabled"
+              onclick="selectCard(2)"
+              onmouseout="hoverCard(2)"
+              onmouseover="hoverCard(2)"
+            >
+              <p class="card__subtitle">Сказочное заморское яство</p>
+              <h2 class="card__title">Нямушка</h2>
+              <p class="card__flavor">с курой</p>
+              <p class="card__description">
+                <span class="card__number">100</span> порций<br />
+                <span class="card__number">5</span> мышей в подарок<br />
+                заказчик доволен
+              </p>
+              <div class="card__size size">
+                <p class="size__number">5</p>
+                <p class="size__text">кг</p>
+              </div>
+            </div>
+            <p class="item__text">
+              Чего сидишь? Порадуй котэ,
+              <span class="item__link" onclick="selectCard(2)">купи.</span>
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
